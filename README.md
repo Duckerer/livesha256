@@ -26,7 +26,7 @@
 
 ```bash
 # Клонируем репозиторий
-git clone https://github.com/ВАШ_НИК/livesha256.git
+git clone https://github.com/duckerer/livesha256.git
 cd livesha256
 
 # Сборка в релизном режиме (для максимальной производительности)
