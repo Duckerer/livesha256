@@ -1,0 +1,22 @@
+[package]
+name = "livesha256"
+version = "0.2.0"
+edition = "2021"
+authors = ["Duckerer"]
+
+[dependencies]
+eframe = "0.29"
+sha2 = { version = "0.10", features = ["compress"] }
+md-5 = "0.10"
+sha1 = "0.10"
+sha3 = "0.10"
+blake3 = "1"
+crc32fast = "1"
+rfd = "0.15"
+wgpu = { version = "22", default-features = false, features = ["wgsl"] }
+pollster = "0.3"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
